@@ -35,6 +35,7 @@
   
   header nav ul li {
     display: inline;
+    text-decoration: underline;
   }
   
   header nav ul li a {
@@ -55,4 +56,32 @@
     background-size: cover;
     background-position: center;
     position: relative;
+  }
+
+  .subtitle {
+      border: 6px solid #deb887;
+      background-color: #6495ed;
+      padding: 20px;
+      width: auto;
+      position: absolute;
+      bottom: 15px;
+      right: 70px;
+  }
+
+  section h3 {
+      font-weight: bolder;
+  }
+
+  /* About Me Section */
+
+  /* Work Section */
+
+  /* Contact Me Section */
+  section nav {
+      float: left;
+      margin: 7px 0;
+  }
+  section nav ul li p {
+      display: inline;
+      text-decoration: underline
   }

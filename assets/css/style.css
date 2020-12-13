@@ -4,6 +4,8 @@
     box-sizing: border-box;
   }
   
+  /* ADD FLEX */
+
   body {
     /* more on this crazy alphanumerical value in a minute! */
     color: #deb887;
@@ -33,7 +35,7 @@
     margin: 7px 0;
   }
   
-  header nav ul li {
+  header nav li {
     display: inline;
     text-decoration: underline;
   }
@@ -46,7 +48,7 @@
 
   /* Look back and check this */
   section {
-      padding: 60px;
+      padding: 50px;
   }
   
   /* Image under header */
@@ -72,16 +74,55 @@
       font-weight: bolder;
   }
 
+  /* Grid Wrapper */
+  .service-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Section Title Styles */
+  .section-title {
+    border-right: 5px solid #deb887;
+    padding-right: 10px;
+    height: 100px;
+    display: inline-grid;
+}
+
   /* About Me Section */
+
+  /* About Me GRIDS */
+  .service-grid-container {
+    display: grid;
+    width: 80%;
+    grid-template-rows: 2fr;
+    border: 2px solid var(--secondary-color);
+    color:  var(--secondary-color);
+    font-size: 1.2rem;
+  }
+  
+  .service-grid-item.first {
+    padding: 15px 0;
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
 
   /* Work Section */
 
   /* Contact Me Section */
-  section nav {
+.contact nav {
       float: left;
       margin: 7px 0;
   }
-  section nav ul li p {
+.contact nav ul li p {
       display: inline;
       text-decoration: underline
+  }
+  
+.contact ul li {
+      text-align: center;
   }

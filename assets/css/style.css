@@ -42,4 +42,17 @@
     font-weight: lighter;
     font-size: 22px;
   }
+
+  /* Look back and check this */
+  section {
+      padding: 60px;
+  }
   
+  /* Image under header */
+  .bubbles {
+    background-image: url('../images/bubbles.jpg.gif');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }

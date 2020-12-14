@@ -3,11 +3,8 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  /* ADD FLEX */
 
   body {
-    /* more on this crazy alphanumerical value in a minute! */
     color: #deb887;
     font-family: Helvetica, Arial, sans-serif;
   }
@@ -16,6 +13,9 @@
   header {
     padding: 20px 35px;
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   header h1 {
@@ -24,26 +24,28 @@
     color: #deb887;
     margin: 0;
     display: inline;
+    padding: 0 15px;
   }
+
   header a {
     text-decoration: none;
     color: #deb887;
   }
   
-  header nav {
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     float: right;
     margin: 7px 0;
-  }
-  
-  header nav li {
-    display: inline;
-    text-decoration: underline;
+    list-style: none;
   }
   
   header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+    border-bottom: 5px solid;
   }
 
   section {
@@ -57,6 +59,19 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .bubbles h2 {
+      font-weight: bolder;
+      font-size: 30px;
+      background-color: black;
+      color: #deb887;
+      padding: 5px 15px;
+      border-radius: 100px;
+      margin: 0 20px 20px 0;
   }
 
   .subtitle {
@@ -67,10 +82,6 @@
       position: absolute;
       bottom: 15px;
       right: 70px;
-  }
-
-  section h3 {
-      font-weight: bolder;
   }
 
   /* About Me Section */
@@ -90,8 +101,8 @@
     text-align: center;
   }
 
-  /* About Me GRIDS */
-
+  /* About Me Section + the Content Grid Wrap */
+  
   /* Work Section */
 
   /* Contact Me Section */

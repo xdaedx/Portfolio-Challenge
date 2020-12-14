@@ -102,8 +102,67 @@
   }
 
   /* About Me Section + the Content Grid Wrap */
-  
+  .about-me {
+      grid-row: 2 / 3;
+  }
+
+  .about-me p {
+      height: 120px;
+  }
+
   /* Work Section */
+  .work {
+      grid-row: 3 / 4;
+  }
+
+  .work-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      height: 350px;
+      gap: 10px;
+  }
+
+  .work-grid a {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      display: flex;
+      align-items: flex-end;
+      padding: 4px;
+  }
+
+  .work-grid div {
+      border: 10px solid #deb887;
+      background-color: #deb887;
+  }
+
+  .project-1 {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+      background-image: url("../images/run-buddy-screen.PNG");
+      background-size: 100%;
+  }
+
+  .project-2 {
+      background-image: url("../images/tv-station.jpg");
+      background-size: 100%;
+  }
+
+  .project-3 {
+      background-image: url("../images/street-wear.jpg");
+      background-size: 100%;
+  }
+
+  .project-4 {
+      background-image: url("../images/spooky-placeholder.jpg");
+      background-size: 100%;
+  }
+
+  .project-5 {
+      background-image: url("../images/beso lunar.jpg");
+      background-size: 100%;
+  }
 
   /* Contact Me Section */
 .contact {

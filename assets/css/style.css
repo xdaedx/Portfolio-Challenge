@@ -5,15 +5,15 @@
   }
 
   body {
-    color: #deb887;
+    color: #ebbb7d;
     font-family: Helvetica, Arial, sans-serif;
-    background-color: black;
+    background-color: rgba(18, 114, 131, 0.589);
   }
   
   /* applying styles to <header> */
   header {
     padding: 20px 35px;
-    background-color: black;
+    background-color: rgba(21, 23, 153, 0.671);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

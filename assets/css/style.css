@@ -18,7 +18,7 @@
     flex-wrap: wrap;
   }
   
-  header h1 {
+  header h1 a {
     font-weight: bold;
     font-size: 36px;
     color: #deb887;
@@ -62,6 +62,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
   }
 
   .bubbles h2 {
@@ -84,24 +85,28 @@
       right: 70px;
   }
 
-  /* About Me Section */
-  .service-grid-container {
+  /* Grid Wrapping */
+  .content-grid-wrapper {
       display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(2, 1fr);
-      width: 50%;
+      grid-template-rows: 1px repeat(2, 3fr) 1fr;
+      grid-template-columns: 1fr 4fr;
+      row-gap: 15px;
   }
 
-  .service-grid-items {
-    width: 200px;
-    height: 50px;
-    color: #deb887;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  .section-title {
+      font-size: 35px;
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 10px;
   }
 
-  /* About Me Section + the Content Grid Wrap */
+  .content {
+      margin: 0 10px;
+      padding: 0 15px;
+      border-left: 5px solid #deb887;
+  }
+  
+  /* About Me Section */
   .about-me {
       grid-row: 2 / 3;
   }
@@ -165,52 +170,22 @@
   }
 
   /* Contact Me Section */
-.contact {
-      float: left;
-      margin: 7px 0;
-  }
-.contact li p {
-      display: inline;
-      text-decoration: underline
-  }
-  
-.contact ul p li {
-      text-align: center;
-  }
+    .contact-me {
+        grid-row: 4 / 5;
+    }
 
-  /* TEST */
-  .steps { 
-    background: var(--primary-color);
-  }
+    .contact-me ul {
+        display: flex;
+        justify-content: space-around;
+        border-left: 5px solid #deb887;
+        margin: 0 10px;
+        padding: 0 15px;
+        align-items: center;
+    }
   
-  .step {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .step h2 {
-    color: var(--secondary-color);
-    font-size: 35px;
-    flex: 1 30%;
-  }
-
-  .step-text {
-    flex: 12;
-  }
-  
-  .step-text p {
-    color: var(--tertiary-color);
-    font-size: 18px;
-  }
-  
-  .step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: var(--secondary-color);
-  }
-  
+.contact ul li {
+    font-weight: lighter;
+    border-bottom: 10px solid;
+    list-style: none;
+    margin-top: 50px;
+}

@@ -209,3 +209,60 @@
     text-decoration: none;
     color: #deb887;
   }
+
+  /* Media Qury for tablets and smaller */
+  @media screen and (max-width: 768px) {
+    header {
+      width: 90%;
+      position: relative;
+      justify-content: center;
+    }
+  
+    .hero {
+      width: 90%;
+      position: relative;
+      justify-content: center;
+    }
+  
+    .profile-image {
+      position: center;
+      width: 40%;
+      margin: 5px 7px;
+    }
+  
+    .content-grid-wrapper {
+      display: unset;
+    }
+    .about-me {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      justify-content: center;
+    }
+  
+    .work {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      justify-content: center;
+    }
+  
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      width: 80%;
+    }
+  
+    .contact-me {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      justify-content: center;
+    }
+  
+    .contact-me ul li {
+      display: flex;
+      margin: 10px 10px;
+    }
+  }

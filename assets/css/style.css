@@ -7,6 +7,7 @@
   body {
     color: #deb887;
     font-family: Helvetica, Arial, sans-serif;
+    background-color: black;
   }
   
   /* applying styles to <header> */
@@ -36,8 +37,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    float: right;
-    margin: 7px 0;
+    align-items: center;
     list-style: none;
   }
   
@@ -49,7 +49,7 @@
   }
 
   section {
-      padding: 70px;
+      padding: 35px;
   }
   
   /* Image under header */
@@ -105,14 +105,15 @@
       padding: 0 15px;
       border-left: 5px solid #deb887;
   }
-  
+
   /* About Me Section */
   .about-me {
       grid-row: 2 / 3;
   }
 
   .about-me p {
-      height: 120px;
+      height: 150px;
+      font-size: 26px;
   }
 
   /* Work Section */
@@ -177,15 +178,20 @@
     .contact-me ul {
         display: flex;
         justify-content: space-around;
-        border-left: 5px solid #deb887;
-        margin: 0 10px;
+        margin: 0 30px;
         padding: 0 15px;
         align-items: center;
     }
   
-.contact ul li {
+.contact-me ul li {
     font-weight: lighter;
-    border-bottom: 10px solid;
+    border-bottom: 5px solid;
     list-style: none;
     margin-top: 50px;
+    font-size: 30px;
 }
+
+.contact-me ul li a {
+    text-decoration: none;
+    color: #deb887;
+  }

@@ -15,7 +15,7 @@
   /* applying styles to <header> */
   header {
     padding: 20px 35px;
-    background-color: #6495ed;
+    background-color: black;
   }
   
   header h1 {
@@ -46,9 +46,8 @@
     font-size: 22px;
   }
 
-  /* Look back and check this */
   section {
-      padding: 50px;
+      padding: 70px;
   }
   
   /* Image under header */
@@ -62,7 +61,7 @@
 
   .subtitle {
       border: 6px solid #deb887;
-      background-color: #6495ed;
+      background-color: black;
       padding: 20px;
       width: auto;
       position: absolute;
@@ -74,55 +73,74 @@
       font-weight: bolder;
   }
 
-  /* Grid Wrapper */
-  .service-grid-wrapper {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  /* Section Title Styles */
-  .section-title {
-    border-right: 5px solid #deb887;
-    padding-right: 10px;
-    height: 100px;
-    display: inline-grid;
-}
-
   /* About Me Section */
-
-  /* About Me GRIDS */
   .service-grid-container {
-    display: grid;
-    width: 80%;
-    grid-template-rows: 2fr;
-    border: 2px solid var(--secondary-color);
-    color:  var(--secondary-color);
-    font-size: 1.2rem;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      width: 50%;
   }
-  
-  .service-grid-item.first {
-    padding: 15px 0;
-    border: 2px solid var(--secondary-color);
-    display: flex;
+
+  .service-grid-items {
+    width: 200px;
+    height: 50px;
+    color: #deb887;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  
+
+  /* About Me GRIDS */
 
   /* Work Section */
 
   /* Contact Me Section */
-.contact nav {
+.contact {
       float: left;
       margin: 7px 0;
   }
-.contact nav ul li p {
+.contact li p {
       display: inline;
       text-decoration: underline
   }
   
-.contact ul li {
+.contact ul p li {
       text-align: center;
   }
+
+  /* TEST */
+  .steps { 
+    background: var(--primary-color);
+  }
+  
+  .step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .step h2 {
+    color: var(--secondary-color);
+    font-size: 35px;
+    flex: 1 30%;
+  }
+
+  .step-text {
+    flex: 12;
+  }
+  
+  .step-text p {
+    color: var(--tertiary-color);
+    font-size: 18px;
+  }
+  
+  .step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: var(--secondary-color);
+  }
+  

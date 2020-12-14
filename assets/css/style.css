@@ -22,10 +22,14 @@
   header h1 a {
     font-weight: bold;
     font-size: 36px;
-    color: #deb887;
+    background-color: #deb887;
+    color:  rgba(21, 23, 153, 0.671);
+    font-size: 30px;
     margin: 0;
     display: inline;
     padding: 0 15px;
+    border-radius: 100px;
+    box-shadow: 0 0 30px rgba(236, 214, 8, 0.651)
   }
 
   header a {
